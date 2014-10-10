@@ -4,12 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a senior Java developer which has experience in design, development and implementation of Java, Web, Enterprise Applications.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself. 
+MS degree in Computer Science of Sharif university of technology.
+
+
+
+
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[a.majidi@gmail.com](mailto:a.majidi@gmail.com)
