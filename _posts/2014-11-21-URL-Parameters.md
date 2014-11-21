@@ -6,7 +6,7 @@ comments: true
 this function returns value of any parameters variable:
 
 
-
+{% highlight php lineos %} 
 function GetURLParameter(sParam)
 {
     var sPageURL = window.location.search.substring(1);
@@ -20,13 +20,13 @@ function GetURLParameter(sParam)
         }
     }
 }
-
+{% endhighlight %}
 And this is how you can use this function assuming the URL is,
  "http://mysite.com/?firstparam=hello&secondparam=goodbye".
  
 var firstparam = GetURLParameter('firstparam');
 var secondparam = GetURLParameter('secondparam');
-
+{% endhighlight %}
 
 So in above code variable "firstparam" will have "hello" as value and "secondparam" variable's will be goodbye.
 
