@@ -5,7 +5,7 @@ comments: true
 ---
 this function returns value of any parameters variable:
 
-
+ 
 {% highlight php lineos %} 
 function GetURLParameter(sParam)
 {
