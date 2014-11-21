@@ -6,7 +6,7 @@ comments: true
 this function returns value of any parameters variable:
 
  
-{% highlight php lineos %} 
+{% highlight ruby %}
 function GetURLParameter(sParam)
 {
     var sPageURL = window.location.search.substring(1);
@@ -24,6 +24,7 @@ function GetURLParameter(sParam)
 And this is how you can use this function assuming the URL is,
  "http://mysite.com/?firstparam=hello&secondparam=goodbye".
  
+ {% highlight ruby %}
 var firstparam = GetURLParameter('firstparam');
 var secondparam = GetURLParameter('secondparam');
 {% endhighlight %}
