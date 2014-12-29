@@ -1,3 +1,10 @@
+---
+layout: post
+title: @Where in Hibernate
+comments: true
+---
+
+
 @Where in hibernate can be applied at entity level. With the help of @Where, we can use where class to fetch the data. The entity will be populated only for those data for which @Where clause returns true. Find the example below. Find the example.
 
 
