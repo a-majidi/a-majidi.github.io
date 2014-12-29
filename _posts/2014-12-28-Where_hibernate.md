@@ -1,6 +1,6 @@
 ---
 layout: post
-title: @Where in Hibernate
+title: Where in Hibernate
 comments: true
 ---
 
