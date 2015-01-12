@@ -7,9 +7,9 @@ comments: true
 to stop the second same user to login add these lines to spring_security.xml
 
 {% highlight ruby %} 
-        <session-management>
-    		  	<concurrency-control error-if-maximum-exceeded="true" max-sessions="1"/>
-  			</session-management>
+<session-management>
+  <concurrency-control error-if-maximum-exceeded="true" max-sessions="1"/>
+</session-management>
 
 {% endhighlight %} 
 
@@ -18,9 +18,9 @@ Step1:
 put
 
 {% highlight ruby %} 
-    <listener>
-        <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
-    </listener>
+<listener>
+ <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
+</listener>
 {% endhighlight %} 
 in web.xml
 
@@ -35,21 +35,32 @@ define my authentication provider "securityAuthenticationProvider" which extends
         <intercept-url pattern="/my/**" access="hasAnyRole('USER','LENDER','BORROWER')" />
 
 				<!--Lender-->				
-				<intercept-url pattern="/lend/beLenderPage.action" access="hasAnyRole('USER','LENDER','BORROWER')" />
-				<intercept-url pattern="/lend/autoBid.action" access="hasAnyRole('USER','LENDER','BORROWER')" />
-				<intercept-url pattern="/lend/favoritePage.action" access="hasAnyRole('USER','LENDER','BORROWER')" />
-				<intercept-url pattern="/lend/userHomePage.action" access="hasAnyRole('USER','LENDER','BORROWER')" />
-				<intercept-url pattern="/lend/bidPageAction.action" access="hasAnyRole('USER','LENDER','BORROWER')" />
+				<intercept-url pattern="/lend/beLenderPage.action" 
+				access="hasAnyRole('USER','LENDER','BORROWER')" />
+				<intercept-url pattern="/lend/autoBid.action" 
+				access="hasAnyRole('USER','LENDER','BORROWER')" />
+				<intercept-url pattern="/lend/favoritePage.action" 
+				access="hasAnyRole('USER','LENDER','BORROWER')" />
+				<intercept-url pattern="/lend/userHomePage.action" 
+				access="hasAnyRole('USER','LENDER','BORROWER')" />
+				<intercept-url pattern="/lend/bidPageAction.action" 
+				access="hasAnyRole('USER','LENDER','BORROWER')" />
 				<!--Borrower-->			
-				<intercept-url pattern="/borrow/beBorrowerPage.action" access="hasAnyRole('USER','LENDER','BORROWER')" />
-				<intercept-url pattern="/borrow/getMoreCreditPage.action" access="hasAnyRole('USER','LENDER','BORROWER')" />
-				<intercept-url pattern="/borrow/borrowPage.action" access="hasAnyRole('USER','LENDER','BORROWER')" />
-				<intercept-url pattern="/borrow/tryBorrowPage.action" access="hasAnyRole('USER','LENDER','BORROWER')" />
-				<intercept-url pattern="/borrow/bidPageAction.action" access="hasAnyRole('USER','LENDER','BORROWER')" />
+				<intercept-url pattern="/borrow/beBorrowerPage.action" 
+				access="hasAnyRole('USER','LENDER','BORROWER')" />
+				<intercept-url pattern="/borrow/getMoreCreditPage.action" 
+				access="hasAnyRole('USER','LENDER','BORROWER')" />
+				<intercept-url pattern="/borrow/borrowPage.action" 
+				access="hasAnyRole('USER','LENDER','BORROWER')" />
+				<intercept-url pattern="/borrow/tryBorrowPage.action" 
+				access="hasAnyRole('USER','LENDER','BORROWER')" />
+				<intercept-url pattern="/borrow/bidPageAction.action" 
+				access="hasAnyRole('USER','LENDER','BORROWER')" />
 				
         <intercept-url pattern="/**" access="permitAll" />
         <!--<http-basic />-->
-        <form-login login-page="/loginPage.action?error=false" authentication-failure-url="/loginPage.action?error=true" default-target-url="/"/>
+        <form-login login-page="/loginPage.action?error=false"
+        	authentication-failure-url="/loginPage.action?error=true" default-target-url="/"/>
         <logout />
         
         <session-management>
@@ -64,10 +75,7 @@ define my authentication provider "securityAuthenticationProvider" which extends
 		
     <beans:bean id="securityUserService" class="com.renrendai.security.SecurityUserService"/>
 
-    <beans:bean id="securityAuthenticationProvider" class="com.renrendai.security.SecurityAuthenticationProvider">
-        <beans:property name="userDetailsService" ref="securityUserService"/>
-        <beans:property name="passwordEncoder" ref="passwordEncoder"/>
-    </beans:bean>
+ 
 	
     <beans:bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.Md5PasswordEncoder"/>
     
