@@ -128,7 +128,7 @@ Add to spring security xml file:
 	
 {% endhighlight %} 
 
-And add to "<http> … </http>" in spring security xml file :
+And add to http block in spring security xml file :
 
 {% highlight ruby %}
 <custom-filter ref="ajaxTimeoutRedirectFilter" after="EXCEPTION_TRANSLATION_FILTER"/>
