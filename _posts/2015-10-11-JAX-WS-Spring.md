@@ -10,32 +10,29 @@ comments: true
 خطوط زیر را به فایل pom خود اضافه نمایید. در صورت عدم استفاده از maven باید چند فایل jar به پروژه اضافه کنید. Library های مورد نیاز : jaxws-rt و jaxws-spring
 Pom.xml:
  
-</span>
+
 <script src="https://gist.github.com/a-majidi/071ab1a6dbef929cdcfa.js"></script>
-{% gist 071ab1a6dbef929cdcfa %}
+
 
 <span style="float:right;direction:rtl;font-family:nazanin,tahoma">
  فایل ws-context.xml را در فولدر resources قرار دهید:
- </span>
 
 <script src="https://gist.github.com/a-majidi/d2aab54b34c812dd819f.js"></script>
 
 <span style="float:right;direction:rtl;font-family:nazanin,tahoma">
 کلاس HelloWorldWS که به عنوان یک spring bean معرفی می شود. به @Component توجه کنید. نام helloWs دقیقا در ws-context.xml استفاده می شود در صورت تغییر آن فایل نیز تغییر دهید.
-</span>
 
 <script src="https://gist.github.com/a-majidi/7bfe25f5e7b0e2e5fa07.js"></script>
 <span style="float:right;direction:rtl;font-family:nazanin,tahoma">
 
 و کلاس HelloWorldImpl
-</span>
+
 
 <script src="https://gist.github.com/a-majidi/f1a1dd026da50ef330ec.js"></script>
 
 <span style="float:right;direction:rtl;font-family:nazanin,tahoma">
 در web.xml خطوط زیر را اضافه نمایید:
 
-</span>
 
 <script src="https://gist.github.com/a-majidi/ebe53987d1334559486f.js"></script>
 
@@ -43,11 +40,10 @@ Pom.xml:
 <span style="float:right;direction:rtl;font-family:nazanin,tahoma;background-color:#F5F5F5">
 
 نکته : در صورتی که اجرای این مثال در tomcat با مشکل مواجه شد از glassfish  یا application server  های مشابه استفاده نمایید.
-</span>
+
 <span style="float:right;direction:rtl;font-family:nazanin,tahoma">
 سورس کد برنامه در آدرس زیر قابل دسترسی است:
 
 https://github.com/a-majidi/java-examples/tree/master/jax-ws-spring
-</span>
 
-</span>
+
