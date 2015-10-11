@@ -9,7 +9,9 @@ comments: true
 خطوط زیر را به فایل pom خود اضافه نمایید. در صورت عدم استفاده از maven باید چند فایل jar به پروژه اضافه کنید. Library های مورد نیاز : jaxws-rt و jaxws-spring
 Pom.xml:
  
+</span>
 
 {% gist 071ab1a6dbef929cdcfa %}
 
+<span style="float:right;direction:rtl;">
 </span>
