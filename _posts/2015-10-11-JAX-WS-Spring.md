@@ -11,7 +11,6 @@ comments: true
 Pom.xml:
  
 <script src="https://gist.github.com/a-majidi/071ab1a6dbef929cdcfa.js"></script>
-<!--{% gist 071ab1a6dbef929cdcfa %}-->
 
  فایل ws-context.xml را در فولدر resources قرار دهید:
 <script src="https://gist.github.com/a-majidi/d2aab54b34c812dd819f.js"></script>
