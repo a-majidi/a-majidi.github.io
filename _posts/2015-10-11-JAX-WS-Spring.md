@@ -11,8 +11,8 @@ comments: true
 Pom.xml:
  
 </span>
-
 <script src="https://gist.github.com/a-majidi/071ab1a6dbef929cdcfa.js"></script>
+{% gist 071ab1a6dbef929cdcfa %}
 
 <span style="float:right;direction:rtl;font-family:nazanin,tahoma">
  فایل ws-context.xml را در فولدر resources قرار دهید:
