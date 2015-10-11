@@ -10,8 +10,6 @@ comments: true
 خطوط زیر را به فایل pom خود اضافه نمایید. در صورت عدم استفاده از maven باید چند فایل jar به پروژه اضافه کنید. Library های مورد نیاز : jaxws-rt و jaxws-spring
 Pom.xml:
  
-
-
 <script src="https://gist.github.com/a-majidi/071ab1a6dbef929cdcfa.js"></script>
 <!--{% gist 071ab1a6dbef929cdcfa %}-->
 
@@ -27,9 +25,9 @@ Pom.xml:
 
 <script src="https://gist.github.com/a-majidi/ebe53987d1334559486f.js"></script>
 
-<span style="background-color:#F5F5F5"
+<div style="background-color:#F5F5F5">
 نکته : در صورتی که اجرای این مثال در tomcat با مشکل مواجه شد از glassfish  یا application server  های مشابه استفاده نمایید.
-</span>
+</div>
 
 
 
